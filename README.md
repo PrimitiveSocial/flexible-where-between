@@ -1,7 +1,9 @@
-![image](https://user-images.githubusercontent.com/13042804/97702236-a4ea0880-1a7c-11eb-940a-ee99796f6044.png)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/primitivesocial/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitivesocial/flexible-where-between)
 [![Total Downloads](https://img.shields.io/packagist/dt/primitivesocial/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitivesocial/flexible-where-between)
+
+![image](https://user-images.githubusercontent.com/13042804/97702236-a4ea0880-1a7c-11eb-940a-ee99796f6044.png)
+
 
 We created this package to avoid duplication of code accross projects when using [Laravel's](https://laravel.com) `whereBetween` method.
 
