@@ -3,10 +3,14 @@
 namespace PrimitiveSocial\FlexibleWhereBetween;
 
 use PrimitiveSocial\FlexibleWhereBetween\Builder\FlexibleWhereBetweenBuilder as QueryBuilder;
-use PrimitiveSocial\FlexibleWhereBetween\Builder\FlexibleWhereBetweenBuilder as DB;
 
 trait FlexibleWhereBetween
 {
+    public static function query(): QueryBuilder
+    {
+        return parent::query();
+    }
+
     /**
      * Configure Eloquent to use custom Query Builder.
      */
@@ -16,4 +20,5 @@ trait FlexibleWhereBetween
 
         return new QueryBuilder($connection, $connection->getQueryGrammar(), $connection->getPostProcessor());
     }
+    
 }
