@@ -1,0 +1,54 @@
+{
+    "name": "primitivesocial/flexible-where-between",
+    "description": "",
+    "keywords": [
+        "primitivesocial",
+        "flexible-where-between"
+    ],
+    "homepage": "https://github.com/primitivesocial/flexible-where-between",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jerred Hurst",
+            "email": "jerred@leadwithprimitive.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrimitiveSocial\\FlexibleWhereBetween\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PrimitiveSocial\\FlexibleWhereBetween\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PrimitiveSocial\\FlexibleWhereBetween\\FlexibleWhereBetweenServiceProvider"
+            ],
+            "aliases": {
+                "FlexibleWhereBetween": "PrimitiveSocial\\FlexibleWhereBetween\\FlexibleWhereBetweenFacade"
+            }
+        }
+    }
+}
