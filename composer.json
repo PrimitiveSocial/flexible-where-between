@@ -3,6 +3,10 @@
     "description": "",
     "keywords": [
         "primitive",
+        "laravel",
+        "whereBetween",
+        "eloquent",
+        "querybuilder",
         "flexible-where-between"
     ],
     "homepage": "https://github.com/primitivesocial/flexible-where-between",
@@ -12,16 +16,17 @@
         {
             "name": "Jerred Hurst",
             "email": "jerred@leadwithprimitive.com",
+            "homepage": "https://leadwihtprimitive.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.3",
-        "illuminate/support": "^7.0"
+        "php": "^7.1",
+        "illuminate/support": "~5.4|~6.0|~7.0|~8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^5.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -32,11 +37,6 @@
         "psr-4": {
             "Primitive\\FlexibleWhereBetween\\Tests\\": "tests"
         }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
