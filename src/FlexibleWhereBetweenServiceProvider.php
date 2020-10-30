@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimitiveSocial\FlexibleWhereBetween;
+namespace Primitive\FlexibleWhereBetween;
 
 use Illuminate\Support\ServiceProvider;
 

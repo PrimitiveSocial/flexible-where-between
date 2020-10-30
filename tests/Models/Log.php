@@ -1,8 +1,8 @@
 <?php
 
-namespace PrimitiveSocial\FlexibleWhereBetween\Tests\Models;
+namespace Primitive\FlexibleWhereBetween\Tests\Models;
 
-use PrimitiveSocial\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
+use Primitive\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
 use Illuminate\Database\Eloquent\Model;
 
 class Log extends Model

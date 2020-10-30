@@ -1,8 +1,8 @@
 {
-    "name": "primitivesocial/flexible-where-between",
+    "name": "primitive/flexible-where-between",
     "description": "",
     "keywords": [
-        "primitivesocial",
+        "primitive",
         "flexible-where-between"
     ],
     "homepage": "https://github.com/primitivesocial/flexible-where-between",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PrimitiveSocial\\FlexibleWhereBetween\\": "src"
+            "Primitive\\FlexibleWhereBetween\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PrimitiveSocial\\FlexibleWhereBetween\\Tests\\": "tests"
+            "Primitive\\FlexibleWhereBetween\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PrimitiveSocial\\FlexibleWhereBetween\\FlexibleWhereBetweenServiceProvider"
+                "Primitive\\FlexibleWhereBetween\\FlexibleWhereBetweenServiceProvider"
             ],
             "aliases": {
-                "FlexibleWhereBetween": "PrimitiveSocial\\FlexibleWhereBetween\\FlexibleWhereBetweenFacade"
+                "FlexibleWhereBetween": "Primitive\\FlexibleWhereBetween\\FlexibleWhereBetweenFacade"
             }
         }
     }

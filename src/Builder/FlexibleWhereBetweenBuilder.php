@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimitiveSocial\FlexibleWhereBetween\Builder;
+namespace Primitive\FlexibleWhereBetween\Builder;
 
 use Illuminate\Database\Query\Builder as BaseQueryBuilder;
 

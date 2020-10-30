@@ -1,8 +1,8 @@
 <?php
 
-namespace PrimitiveSocial\FlexibleWhereBetween;
+namespace Primitive\FlexibleWhereBetween;
 
-use PrimitiveSocial\FlexibleWhereBetween\Builder\FlexibleWhereBetweenBuilder as QueryBuilder;
+use Primitive\FlexibleWhereBetween\Builder\FlexibleWhereBetweenBuilder as QueryBuilder;
 
 trait FlexibleWhereBetween
 {

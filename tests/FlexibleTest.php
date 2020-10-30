@@ -1,13 +1,12 @@
 <?php
 
-namespace PrimitiveSocial\FlexibleWhereBetween\Tests;
+namespace Primitive\FlexibleWhereBetween\Tests;
 
 use Carbon\Carbon;
 use Orchestra\Testbench\TestCase;
-use Illuminate\Support\Facades\DB;
-use PrimitiveSocial\FlexibleWhereBetween\Tests\Models\Log;
-use PrimitiveSocial\FlexibleWhereBetween\FlexibleWhereBetweenServiceProvider;
-use PrimitiveSocial\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
+use Primitive\FlexibleWhereBetween\Tests\Models\Log;
+use Primitive\FlexibleWhereBetween\FlexibleWhereBetweenServiceProvider;
+use Primitive\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
 
 class FlexibleTest extends TestCase
 {

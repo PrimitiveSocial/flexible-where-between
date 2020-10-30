@@ -1,6 +1,6 @@
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/primitivesocial/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitivesocial/flexible-where-between)
-[![Total Downloads](https://img.shields.io/packagist/dt/primitivesocial/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitivesocial/flexible-where-between)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/primitive/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitive/flexible-where-between)
+[![Total Downloads](https://img.shields.io/packagist/dt/primitives/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitive/flexible-where-between)
 
 ![image](https://user-images.githubusercontent.com/13042804/97702236-a4ea0880-1a7c-11eb-940a-ee99796f6044.png)
 
@@ -47,7 +47,7 @@ So, regardless of whether `$start_date` or `$end_date` is `NULL` or has a value,
 You can install the package via composer:
 
 ```bash
-composer require primitivesocial/flexible-where-between
+composer require primitive/flexible-where-between
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ To use the package, you simply need to include the Trait `WhereBetween` on any M
 
 ``` php
 ...
-use PrimitiveSocial\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
+use Primitive\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
 
 class SiteLog extends Model
 {
@@ -68,7 +68,7 @@ class SiteLog extends Model
 
 ## Credits
 
-- [Jerred Hurst](https://github.com/primitivesocial)
+- [Primitive](https://github.com/primitivesocial)
 
 ## License
 
