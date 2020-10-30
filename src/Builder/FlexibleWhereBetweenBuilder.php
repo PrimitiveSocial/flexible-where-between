@@ -18,11 +18,11 @@ class FlexibleWhereBetweenBuilder extends BaseQueryBuilder
         }
 
         if (is_null($min)) {
-            return $this->where($column, '<=', $max);
+            return $this->where($column, '<=', $max, $boolean);
         }
 
         if (is_null($max)) {
-            return $this->where($column, '>=', $min);
+            return $this->where($column, '>=', $min, $boolean);
         }
 
         $this->wheres[] = compact('type', 'column', 'values', 'boolean', 'not');
