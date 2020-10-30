@@ -1,9 +1,46 @@
-# Very short description of the package
+![image](https://user-images.githubusercontent.com/13042804/97702236-a4ea0880-1a7c-11eb-940a-ee99796f6044.png)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/primitivesocial/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitivesocial/flexible-where-between)
 [![Total Downloads](https://img.shields.io/packagist/dt/primitivesocial/flexible-where-between.svg?style=flat-square)](https://packagist.org/packages/primitivesocial/flexible-where-between)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+We created this package to avoid duplication of code accross projects when using [Laravel's](https://laravel.com) `whereBetween` method.
+
+In most cases this is being used for some type of reporting / filtering and the UI is sending the parameters.  
+
+For example, if you are looking for "something" between two dates, your method without this package would need to look like:
+
+``` php
+$logs = Log::query();
+
+if ((empty($end_date) && (empty($start_date))
+{
+    $logs = $logs->get();
+}
+
+else if (empty($end_date)) 
+{
+   $logs = $logs->where('created_at','>=', $start_date);
+}
+else if (empty($start_date)) 
+{
+   $logs = $logs->where('created_at','<=', $end_date);
+} 
+else 
+{
+   $logs = $logs->whereBetween('created_at', [$start_date, $end_date])
+}
+
+```
+
+This package takes care of that logic for you.  Your new method would look like:
+
+
+``` php
+Log::whereBetween('created_at', [$start_date, $end_date])
+
+```
+So, regardless of whether `$start_date` or `$end_date` is `NULL` or has a value, it will "just work".
+
 
 ## Installation
 
@@ -15,37 +52,24 @@ composer require primitivesocial/flexible-where-between
 
 ## Usage
 
+To use the package, you simply need to include the Trait `WhereBetween` on any Model:
+
 ``` php
-// Usage description here
+...
+use PrimitiveSocial\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
+
+class SiteLog extends Model
+{
+    use WhereBetween;
+    
+    ...
+
 ```
-
-### Testing
-
-``` bash
-composer test
-```
-
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-### Security
-
-If you discover any security related issues, please email jerred@leadwithprimitive.com instead of using the issue tracker.
 
 ## Credits
 
 - [Jerred Hurst](https://github.com/primitivesocial)
-- [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
