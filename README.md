@@ -5,9 +5,7 @@
 ![image](https://user-images.githubusercontent.com/13042804/97702236-a4ea0880-1a7c-11eb-940a-ee99796f6044.png)
 
 
-We created this package to avoid duplication of code accross projects when using [Laravel's](https://laravel.com) `whereBetween` method.
-
-In most cases this is being used for some type of reporting / filtering and the UI is sending the parameters.  
+We created this package to avoid duplication of code accross projects when using [Laravel's](https://laravel.com) `whereBetween` method.  
 
 For example, if you are looking for "something" between two dates, your method without this package would need to look like:
 
