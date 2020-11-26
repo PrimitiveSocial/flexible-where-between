@@ -52,19 +52,7 @@ composer require primitive/flexible-where-between
 
 ## Usage
 
-To use the package, you simply need to include the Trait `WhereBetween` on any Model:
-
-``` php
-...
-use Primitive\FlexibleWhereBetween\FlexibleWhereBetween as WhereBetween;
-
-class SiteLog extends Model
-{
-    use WhereBetween;
-    
-    ...
-
-```
+After the package is installed, a `macro` is registered that overrides the default `whereBetween` functionality.  So, it just works. :) 
 
 ## Credits
 
